@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="C:\Users\welcome\Downloads\model-tfjs\model.json"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Tensorflow.js - from Browser</h2>
+
+    <form (ngSubmit)="func(myForm)" #myForm="ngForm">
+      Enter the input value:
+      <input type="number" name="ipData" id="ipData" value="{{ipdata}}" ngModel>
+      <button type="submit">Predict from Browser</button>
+    </form>
+
+    <h4>
+      The Predicted Value from Browser: {{data}}
+    </h4>
+
+
+    ----------------------------------
+
+    <h2>Tensorflow.js - from Model</h2>
+
+    <form (ngSubmit)="func2(myForm2)" #myForm2="ngForm">
+      Enter the input value:
+      <input type="number" name="ipData2" id="ipData2" value="{{ipdata2}}" ngModel>
+      <button type="submit">Predict from Precompiled model</button>
+    </form>
+
+    <h4>
+      The Predicted Value from Precompiled model: {{data2}}
+    </h4>
+
+  </div>
+</body>
+
+</html>
